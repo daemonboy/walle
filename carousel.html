@@ -35,9 +35,19 @@
             </ul>
      </div>
  
+     <audio id="myMusic">
+        <source = src="video/1009955662.mp3" type="audio/mp3">
+        <source = src="video/1009955662.mp3" type="audio/ogg">
+    </audio>
+
  </div>
  
-<script>     
+<script>  
+    var audio = document.getElementById("myMusic");
+    
+    //播放(继续播放)
+    audio.play();
+
     var num=0,
 	   timer=null;
 

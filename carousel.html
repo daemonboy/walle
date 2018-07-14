@@ -9,8 +9,12 @@
 </head>
 
 <body>
+<div>
+<audio src="video/1009955662.mp3" preload="auto" controls autoplay loop></audio>
+</div>    
+
  <div id="top">
- 	<h1>轮播图</h1>
+     <h1>轮播图</h1>
  </div>
  <div id="wrap">
  	<div class="img-show">
@@ -34,19 +38,10 @@
                 <li><a><img src="img/carousel/label/5.jpg" alt=""/></a></li>
             </ul>
      </div>
- 
-     <audio id="myMusic">
-        <source = src="video/1009955662.mp3" type="audio/mp3">
-        <source = src="video/1009955662.mp3" type="audio/ogg">
-    </audio>
 
  </div>
  
 <script>  
-    var audio = document.getElementById("myMusic");
-    
-    //播放(继续播放)
-    audio.play();
 
     var num=0,
 	   timer=null;

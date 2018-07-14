@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<style>
+		body,h1{padding:0;margin:0;font-family:"微软雅黑"}
+		body{height:100%;background:url(img/demo/bgimg.jpg);}
+		#header{height:50px;width:100%;background:black;color:white;text-align:center;line-height:50px;}
+		.wrap{height:auto;min-height:540px;width:100%;padding-bottom:30px;padding-top:30px;}
+		
+		ul{list-style:none;margin:0 auto;padding-left:90px;}
+		.wrap ul li{float:left;border:1px solid #FFF;width:300px;height:225px;overflow:hidden;margin:25px 20px;box-shadow: 0px 5px 10px rgba(0,0,0,0.5);}
+		.wrap ul li a{display:block;float:left; text-decoration:none;color:black;}
+		.img{width:300px;height:225px;}
+		.title{height:30px;width:100%;color:gray;font-weight:bold;background-color:black;text-align:center;line-height:30px;margin-top:-30px;}
+		.description{height:225px;width:300px;color:#fff;background-color:black;opacity:0.7;font-size:1.1em;}
+		.description p{width:240px;margin:0 auto;padding-top:20%;}
+		#footer{position: relative;width:100%;height:30px;margin-top:-30px;padding:5px 0;text-align:right;color: #330033;line-height:160%;clear:both;}
+
+	</style>
+    <title>Demo | leafxm</title>
+</head>
+
+<body>
+<div id="header"><h1>Demo 展示</h1></div>        
+<div class="wrap">
+	
+	<ul class="demolist">
+		<li>
+			<a href="http://leafxm.com" target="_blank" >
+				<div class="img" style="background:url(img/demo/myBlog.JPG">		
+				</div>
+				<div class="title">
+				我的博客
+				</div>
+				<div class="description">
+                    	<p>使用hexo+github搭建的博客</p>
+                    </div>
+			</a>
+		</li>
+		<li>
+			<a href="http://leafxm.com/demo/trace" target="_blank" >
+				<div class="img" style="background:url(img/demo/trace.jpg)">		
+				</div>
+				<div class="title">
+				人员聚集迁徙效果展示
+				</div>
+				<div class="description">
+                    	<p>展示人员在主要聚集地点之间随时间动态转移效果</p>
+                    </div>
+			</a>
+		</li>
+		<li>
+			<a href="http://leafxm.com/demo/locating" target="_blank" >
+				<div class="img" style="background:url(img/demo/locating.jpg)">		
+				</div>
+				<div class="title">
+				地图搜索与定位功能
+				</div>
+				<div class="description">
+                    	<p>实现地图搜索，以及点击地图可获得该点经纬度等信息</p>
+                    </div>
+			</a>
+		</li>
+		<li>
+			<a href="http://leafxm.com/demo/mapCompare" target="_blank" >
+				<div class="img" style="background:url(img/demo/mapCompare.jpg)">		
+				</div>
+				<div class="title">
+				弹出层并列地图展示
+				</div>
+				<div class="description">
+                    	<p>实现根据所选项目个数在弹出层中展示几个并列地图效果</p>
+                    </div>
+			</a>
+		</li>
+		<li>
+			<a href="http://leafxm.com/demo/carousel" target="_blank" >
+				<div class="img" style="background:url(img/demo/carousel.JPG)">		
+				</div>
+				<div class="title">
+				轮播图
+				</div>
+				<div class="description">
+                    	<p>实现自动轮播和选择图片的功能</p>
+                    </div>
+			</a>
+		</li>
+	</ul>
+
+</div>
+<div id="footer">
+<p>Designed by leafxm</p>
+</div>
+<script>
+$('.demolist li a').hover(function(){
+		
+		$(this).children('.description').animate({'margin-top':'-255px'},200);
+		$(this).children('.title').animate({'margin-top':'0'},200);
+	},function(){
+		
+	$(this).children('.description').animate({'margin-top':'0'},200);
+	$(this).children('.title').animate({'margin-top':'-30px'},200);}
+);
+</script>
+</body>
+</html>

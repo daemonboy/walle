@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>地图定位</title>
+ <link rel="stylesheet" href="css/locating/locating.css" type="text/css" />
+</head>
+
+<body>
+	<div id="header"><h1>地图定位</h1></div>        
+	<div class="floatfix" id="wrap">
+		<div class="left">
+			<h2>搜索栏</h2>
+			<input type="button" id="btn_clear" value="洗刷地图"  />
+
+			<p class="title">经纬度定位</p>
+			<p>经度: <input id="longitude" type="text"placeholder="请输入经度..." style="width:130px; margin-right:10px;" /></p>
+			<p>纬度: <input id="latitude" type="text" placeholder="请输入纬度..."style="width:130px; margin-right:10px;" /></p>
+			<input type="button"  id="btn_lsearch" value="精确搜索" class="btn"/>
+
+			<p class="title">地名定位</p>
+			<input style="width:180px;" type="text" placeholder="请输入地址..." id="fuzzysearch" />
+			<input  type="button" id="btn_fsearch" value="模糊搜索" class="btn"/>	  
+				
+		</div>
+ <div class="right" id="results"></div>	
+		<div class="middle" >
+			<div id="map_container">地图拼命显示中...</div>
+			<div class="explain">
+				<h1>说明</h1>
+				<p>左侧搜索栏可以实现已知经纬度精确定位以及根据地点名称模糊定位两种地图地址搜索方式。</p>		
+				<p>点击地图某一点，可以得到该点经纬度和像素坐标。右键点击红框内容，在地图上清除该点。</p>
+				<p>点击“洗刷地图”按键将地图上的标识清除。</p>
+			</div>
+		</div>	
+         
+	</div>
+  
+	<div id="footer">
+		 Designed by leafxm
+	</div>
+ <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=vVx4BApDDaqHqv49noQqLiD1"></script>
+  <script type="text/javascript" src="js/locating/locating.js"></script>
+
+</body>
+</html>

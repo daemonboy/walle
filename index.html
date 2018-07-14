@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<style>
+		body,h1{padding:0;margin:0;font-family:"微软雅黑"}
+		body{height:100%;width:100%;background:url(img/demo/bgimg.jpg) repeat  0 center #fff;}
+		#header{height:50px;width:100%;background:black;color:white;text-align:center;line-height:50px;}
+		.wrap{height:auto;min-height:540px;width:100%;padding-bottom:30px;padding-top:30px;}
+		.floatfix:after{ content:"";
+    display:table;
+    clear:both;}
+		.wrap ul{list-style:none;margin:0 auto;padding-left:30px;}
+		.wrap ul li{float:left;border:1px solid #FFF;width:300px;height:225px;overflow:hidden;margin:20px 40px;box-shadow: 0px 5px 10px rgba(0,0,0,0.5);}
+		.wrap ul li a{display:block;float:left; text-decoration:none;color:black;}
+		.img{width:300px;height:225px;}
+		.title{height:30px;width:100%;color:gray;font-weight:bold;background-color:black;text-align:center;line-height:30px;margin-top:-30px;}
+		.description{height:195px;width:300px;color:#fff;background-color:black;opacity:0.7;font-size:1.1em;}
+		.description p{width:240px;margin:0 auto;padding-top:20%;}
+         #footer{width:100%;height:30px;text-align:right;color:white;background-color:#666666;position:fixed;bottom:0;line-height:2px}
+		 @media screen and (max-width: 760px){.wrap ul{padding-left:0px;}.wrap ul li{float:none;margin:20px auto;}.description{margin-top:-225px;}}
+	</style>
+    <title>Demo | leafxm</title>
+</head>
+
+<body>
+<div id="header"><h1>Walle</h1></div>        
+<div class="wrap">
+	
+	<ul class="demolist floatfix">
+		<li>
+			<a href="http://daemonboy.github.io/" target="_blank" >
+				<div class="img" style="background:url(img/demo/myBlog.JPG)">		
+				</div>
+				<div class="title">
+				我的博客
+				</div>
+				<div class="description">
+                    	<p>搭建在github上的博客</p>
+                    </div>
+			</a>
+		</li>
+		<li>
+			<a href="http://daemonboy.github.io/demo/carousel" target="_blank" >
+				<div class="img" style="background:url(img/demo/carousel.JPG)">		
+				</div>
+				<div class="title">
+				轮播图
+				</div>
+				<div class="description">
+                    	<p>实现自动轮播和根据选择展示图片的功能</p>
+                    </div>
+			</a>
+		</li>
+	</ul>
+</div>
+<div id="footer">
+<p>Designed by leafxm</p>
+</div>
+<script>
+$('.demolist li a').hover(function(){
+		
+		$(this).children('.description').animate({'margin-top':'-225px'},200);
+		
+	},function(){		
+	$(this).children('.description').animate({'margin-top':'0'},200);
+	}
+);
+</script>
+</body>
+</html>

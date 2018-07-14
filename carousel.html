@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>轮播图展示</title>
+<title>我们的恋爱轨迹</title>
 <link rel="stylesheet" type="text/css" href="css/carousel/carousel.css"/>
 <script type="text/javascript" src="js/jquery.min.js"></script>
 
@@ -14,16 +14,21 @@
 </div>    
 
  <div id="top">
-     <h1>轮播图</h1>
+     <h1>我们的恋爱轨迹</h1>
  </div>
  <div id="wrap">
  	<div class="img-show">
-    	<ul class="img-con">加载中……
-                <li><a><img src="img/carousel/1.jpg" alt="1"/></a></li>
-                <li><a><img src="img/carousel/2.jpg" alt="1"/></a></li>
-                <li><a><img src="img/carousel/3.jpg" alt="1"/></a></li>
-                <li><a><img src="img/carousel/4.jpg" alt="1"/></a></li>
-                <li><a><img src="img/carousel/5.jpg" alt="1"/></a></li>
+    	<ul class="img-con">
+                <li><a><img src="img/carousel/1.jpeg" alt="1"/></a></li>
+                <li><a><img src="img/carousel/2.jpeg" alt="1"/></a></li>
+                <li><a><img src="img/carousel/3.jpeg" alt="1"/></a></li>
+                <li><a><img src="img/carousel/4.jpeg" alt="1"/></a></li>
+                <li><a><img src="img/carousel/5.jpeg" alt="1"/></a></li>
+                <li><a><img src="img/carousel/6.jpeg" alt="1"/></a></li>
+                <li><a><img src="img/carousel/7.jpeg" alt="1"/></a></li>
+                <li><a><img src="img/carousel/8.jpeg" alt="1"/></a></li>
+                <li><a><img src="img/carousel/9.jpeg" alt="1"/></a></li>
+                <li><a><img src="img/carousel/10.jpeg" alt="1"/></a></li>
             </ul>  
             <div class="pre"></div>
      <div class="next"></div>
@@ -67,9 +72,9 @@
                 img_li[i].style.width=wrap_width;
             }
             $('.img-con').css('left',-num*parseInt(wrap_width)+'px');
-            $('.pre').css('left',(parseInt(wrap_width)-700)/2+'px');
-            $('.next').css('left',(parseInt(wrap_width)-700)/2+650+'px');
-			 $('.label').css('left',parseInt(wrap_width-700)/2+50+'px');
+            $('.pre').css('left',(parseInt(wrap_width)-800)/2+'px');
+            $('.next').css('left',(parseInt(wrap_width)-800)/2+650+'px');
+			 $('.label').css('left',parseInt(wrap_width-800)/2+50+'px');
         };
 		//label设置
         function labelnail() {
@@ -123,7 +128,7 @@
             var    img=$('.img-con li img');
             timer=setInterval(function(){
                 move_next();
-            },3000);
+            },2000);
             for(var i=0;i<img.length;i++){
                 img[i].onmouseover=$('.pre').get(0).onmouseover=$('.next').get(0).onmouseover=function(){
                     clearInterval(timer);

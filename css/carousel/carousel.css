@@ -13,6 +13,12 @@ ul,ol{
     list-style: none;
 }
 
+#music{
+	/* width:100%; */
+    margin-top:15px;
+	text-align:left;
+    }
+    
 /*顶部*/
 #top{
 	width:100%;
@@ -25,7 +31,7 @@ ul,ol{
     line-height:50px;
     font-family: '微软雅黑';
     color:rgb(177, 34, 34);
-	letter-spacing:10px;
+	letter-spacing:15px;
 	}
 #wrap{
 	position:relative;
@@ -88,7 +94,7 @@ ul,ol{
     height:100px;
 }
 #wrap .label .label-con{
-	width:700px;
+	width:1000px;
     margin:0 auto;
     padding-left:10px;
 }

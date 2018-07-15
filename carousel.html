@@ -9,7 +9,7 @@
 </head>
 
 <body>
-<div>
+<div id="music">
 <audio src="video/1009955662.mp3" preload="auto" controls autoplay loop></audio>
 </div>    
 
@@ -29,7 +29,8 @@
                 <li><a><img src="img/carousel/8.jpeg" alt="1"/></a></li>
                 <li><a><img src="img/carousel/9.jpeg" alt="1"/></a></li>
                 <li><a><img src="img/carousel/10.jpeg" alt="1"/></a></li>
-            </ul>  
+                <li><a><img src="img/carousel/11.jpeg" alt="1"/></a></li>
+        </ul>  
             <div class="pre"></div>
      <div class="next"></div>
     </div>
@@ -41,6 +42,11 @@
                 <li><a><img src="img/carousel/label/3.jpg" alt=""/></a></li>
                 <li><a><img src="img/carousel/label/4.jpg" alt=""/></a></li>
                 <li><a><img src="img/carousel/label/5.jpg" alt=""/></a></li>
+                <li><a><img src="img/carousel/label/6.jpg" alt=""/></a></li>
+                <li><a><img src="img/carousel/label/7.jpg" alt=""/></a></li>
+                <li><a><img src="img/carousel/label/8.jpg" alt=""/></a></li>
+                <li><a><img src="img/carousel/label/9.jpg" alt=""/></a></li>
+                <li><a><img src="img/carousel/label/10.jpg" alt=""/></a></li>
             </ul>
      </div>
 
@@ -113,11 +119,12 @@
         function move_next(n){
 			var wrap_width=$('#wrap').css('width');
             var m;
-			 var img_li=$('.img-con li');
-			if(num>=img_li.length-1){num=-1};
+			var img_li=$('.img-con li');
+            if(num>=img_li.length-1){num=-1};
             num++;
             n==undefined?m=num:m=n;
-            $('.img-con').animate({'left':-m*parseInt(wrap_width)+'px'},'slow','swing');        
+            $('.img-con').animate({'left':-m*parseInt(wrap_width)+'px'},'slow','swing');  
+            console.log(wrap_width);
             num=m;
             labelnail();
         }
